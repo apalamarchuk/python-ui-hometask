@@ -28,7 +28,7 @@ class TestMeetsMainPage(FixtureMeetsMainPage):
 
     @classmethod
     def setup_class(cls):
-        cls.driver = webdriver.Chrome()
+        cls.driver = webdriver.Firefox()
         cls.mp(cls)
 
     def setup_method(self, method):
