@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import pytest
 from resources.model.pages.main_page import MainPage
 from resources.model.pages.main_page_object_rep import MainPageObjectRepository
