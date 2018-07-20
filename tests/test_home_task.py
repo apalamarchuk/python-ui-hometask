@@ -30,6 +30,7 @@ class TestMeetsMainPage(FixtureMeetsMainPage):
     @classmethod
     def setup_class(cls):
         chrome_options = Options()
+        chrome_options.add_argument('--headless')
         chrome_options.add_argument('--no-sandbox')
         chrome_options.add_argument('--disable-dev-shm-usage')
         cls.driver = webdriver.Chrome('/usr/local/bin/chromedriver', chrome_options=chrome_options)
