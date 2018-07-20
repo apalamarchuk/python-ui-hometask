@@ -44,7 +44,7 @@ class TestMeetsMainPage(FixtureMeetsMainPage):
     def test_required_fields_validation(self, mp):
         mp.object_rep.calculation_button.click()
         assert mp.object_rep.calculation_button.is_enabled()
-        assert "0.00" in mp.object_rep.shipping_cost_field.get_text()
+        assert "0.01" in mp.object_rep.shipping_cost_field.get_text()
         assert "0.00" in mp.object_rep.total_cost_field.get_text()
         assert mp.object_rep.country_select.get_message() == 'This field can’t be blank'
         assert mp.object_rep.weight_field.get_message() == 'This field can’t be blank'
